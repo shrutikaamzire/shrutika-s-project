@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="left">Shrutika's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home -->
+ <main>
+  <section id="home" class="home">
+    <div class="leftsection">
+     <h1>Hello! I am  <span class="girl">Shrutika</span></h1>
+     <div class="text">I am a <span id="element"></span></div>
+     <div class="brief"><p>I'm a software developer and coder . This is my portfolio website. 
+      Here you'll learn about my journey <br>as a software developer and coder.</p></div>
+
+     <button id="resumeButton">My Resume</button>
+     <div id="resumePopup">
+       <embed id="resumePDF" src="shrutika resume (1).pdf" type="application/pdf">
+     </div>
+    </div>
+    <div class="rightsection">
+      <img src="src/WhatsApp Image 2024-05-31 at 14.52.47.jpeg" alt="myphoto">
+    </div>
+  </section>
+ </main>
+
+ <!-- About -->
+<main>
+<section id="about" class="myabout">
+  <h1 class="decor">My Skills</h1>
+  <div class="skills">
+    <div class="leftside">
+    <p>Hello! I am Shrutika, a web developer skilled in HTML, CSS, JavaScript, 
+      and Angular for building modern websites and applications.
+       I also know C++ and Python, which help me solve various coding problems. 
+       My understanding of data structures and algorithms ensures my code is efficient. 
+       I love learning new things and am dedicated to creating high-quality web solutions.
+      </p>
+   
+    </div>
+    <div class="rightside">
+
+      <div class="image">
+
+        
+          <img src="src/finalpython.png" alt="logo" >
+          <img src="src/finalcpp.png" alt="logo" >
+          <img src="src/finalhtml.png" alt="logo" >
+          <img src="src/images-removebg-preview (1).png" alt="logo" >
+          <img src="src/javascript-removebg-preview.png" alt="logo" >
+          <img src="src/finalangular.png" alt="logo" >
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+ 
+<!-- Projects -->
+ <main>
+  <section id="project"class="projects">
+    <div class="heading">
+    <h1 class="decor">My Projects</h1>
+  </div>
+    <div class="imp">
+
+      <div class="pro">
+        <img src="src/attendance-removebg-preview.png"alt="projectimage">
+        <h2>Attendance Monitoring System</h2>
+        <h5>using python and open CV</h5>
+        <a href="https://github.com/your-github-profile"><img  src="src/gitu-removebg-preview (1).png" alt="GitHub" class="github-icon"></a>
+      </div>
+
+        <div class="pro">
+        <img src="src/weather-removebg-preview.png"alt="projectimage">
+        <h2>Weather Forecasting</h2>
+        <h5>using Machine Learning and Python</h5>
+        <a href="https://github.com/your-github-profile"><img  src="src/gitu-removebg-preview (1).png" alt="GitHub" class="github-icon"></a>
+        </div>
+
+        <div class="pro">
+        <img src="src/banksss-removebg-preview.png"alt="projectimage">
+        <h2>Bank Management System</h2>
+        <h5>using html ,css , SQL and PHP</h5>
+        <a href="https://github.com/your-github-profile"><img  src="src/gitu-removebg-preview (1).png" alt="GitHub" class="github-icon"></a>
+        </div>
+
+        <div class="pro">
+        <img src="src/now.png"alt="projectimage">
+        <h2>Hospital Management System</h2>
+        <h5>using html ,css ,javascript ,SQL and PHP</h5>
+        <a href="https://github.com/your-github-profile"><img  src="src/gitu-removebg-preview (1).png" alt="GitHub" class="github-icon"></a>
+        </div>
+
+      </div>
+
+     </div>
+</section>
+ </main>
+
+ <!-- contact -->
+
+ <main>
+  <section id="contact" class="contacts">
+    <div class="con"><h1>Contact Me</h1></div>
+    <div class="contact-form-container">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Enter your name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Enter your email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Enter your message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+ </main>
+ <!-- Footer -->
+<footer>
+  
+    <div class="social-links">
+      <a href="https://www.instagram.com/shrutika_amzire/"><img src="src/1.png" alt="Instagram"></a>
+      <a href="https://www.linkedin.com/in/your-linkedin-profile"><img src="src/images-removebg-preview.png" alt="LinkedIn"></a>
+      <a href="https://github.com/your-github-profile"><img src="src/gitu-removebg-preview (1).png" alt="GitHub"></a>
+    </div>
+    <div class="copyright">@copyright shrutika amzire</div>
+  
+</footer>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed('#element', {
+    strings: ['Web Developer', ' Coder.'],
+    loop: true,
+          typeSpeed: 100,
+          backSpeed: 80,
+          backDelay: 1000,
+  });
+</script>
+<script src="script.js"></script>
+</body>
+</html>
